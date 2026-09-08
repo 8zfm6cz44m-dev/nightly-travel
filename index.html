@@ -404,12 +404,9 @@
               <option>Miami</option>
               <option>Barcelona</option>
               <option>Milano</option>
-              <option value="Football — Europe">Football — Europe</option>
-              <option value="Football — MLS">Football — MLS</option>
-              <option value="Not sure yet">
-                <span class="no">Vet ikke ennå</span>
-                <span class="en">Not sure yet</span>
-              </option>
+              <option value="Football — Europe" data-no="Fotball — Europa" data-en="Football — Europe">Fotball — Europa</option>
+              <option value="Football — MLS" data-no="Fotball — MLS" data-en="Football — MLS">Fotball — MLS</option>
+              <option value="Not sure yet" data-no="Vet ikke ennå" data-en="Not sure yet">Vet ikke ennå</option>
             </select>
           </div>
         </div>
@@ -440,12 +437,19 @@
 </footer>
 
 <script>
+  function applyLang(lang) {
+    document.body.className = 'lang-' + lang;
+    document.documentElement.lang = lang;
+    document.querySelectorAll('#interest option[data-no]').forEach(opt => {
+      opt.textContent = opt.dataset[lang];
+    });
+  }
+
   document.querySelectorAll('.lang-switch button').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      document.body.className = 'lang-' + btn.dataset.lang;
-      document.documentElement.lang = btn.dataset.lang;
+      applyLang(btn.dataset.lang);
     });
   });
 </script>
