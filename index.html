@@ -1,1 +1,439 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9Im5vIiBjbGFzcz0ibGFuZy1ubyI+CjxoZWFkPgo8bWV0YSBjaGFyc2V0PSJVVEYtOCI+CjxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIj4KPHRpdGxlPk5pZ2h0bHkgVHJhdmVsPC90aXRsZT4KPGxpbmsgcmVsPSJwcmVjb25uZWN0IiBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tIj4KPGxpbmsgcmVsPSJwcmVjb25uZWN0IiBocmVmPSJodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tIiBjcm9zc29yaWdpbj4KPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1GcmF1bmNlczpvcHN6LHdnaHRAOS4uMTQ0LDMwMDs5Li4xNDQsNDAwOzkuLjE0NCw1MDA7OS4uMTQ0LDYwMCZmYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPgo8c3R5bGU+CiAgOnJvb3R7CiAgICAtLWJnOiAjMGIxMjEwOwogICAgLS1iZy1wYW5lbDogIzEwMWExNjsKICAgIC0tYmctcGFuZWwtMjogIzBlMTYxMzsKICAgIC0taGFpcmxpbmU6IHJnYmEoMTg1LDE1NCw5MSwwLjI4KTsKICAgIC0tZ29sZDogI2I5OWE1YjsKICAgIC0tZ29sZC1zb2Z0OiAjOGY3YTRjOwogICAgLS13aW5lOiAjNWMxYzIyOwogICAgLS1pdm9yeTogI2VjZTVkMzsKICAgIC0taXZvcnktZGltOiAjYTliM2FjOwogICAgLS1tYXg6IDExMjBweDsKICB9CgogICp7IGJveC1zaXppbmc6IGJvcmRlci1ib3g7IH0KICBodG1seyBzY3JvbGwtYmVoYXZpb3I6IHNtb290aDsgfQogIGJvZHl7CiAgICBtYXJnaW46MDsKICAgIGJhY2tncm91bmQ6IHJhZGlhbC1ncmFkaWVudChlbGxpcHNlIDEyMCUgODAlIGF0IDUwJSAtMTAlLCAjMTQyMDE5IDAlLCB2YXIoLS1iZykgNTUlKTsKICAgIGNvbG9yOiB2YXIoLS1pdm9yeSk7CiAgICBmb250LWZhbWlseTogJ0ludGVyJywgLWFwcGxlLXN5c3RlbSwgc2Fucy1zZXJpZjsKICAgIGZvbnQtd2VpZ2h0OiA0MDA7CiAgICBsaW5lLWhlaWdodDogMS41NTsKICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkOwogIH0KCiAgLmxhbmctbm8gLmVueyBkaXNwbGF5Om5vbmU7IH0KICAubGFuZy1lbiAubm97IGRpc3BsYXk6bm9uZTsgfQoKICBheyBjb2xvcjogaW5oZXJpdDsgfQoKICAud3JhcHsgbWF4LXdpZHRoOiB2YXIoLS1tYXgpOyBtYXJnaW46IDAgYXV0bzsgcGFkZGluZzogMCAzMnB4OyB9CgogIC8qIC0tLS0tLS0tLS0gTkFWIC0tLS0tLS0tLS0gKi8KICBuYXZ7CiAgICBwb3NpdGlvbjogc3RpY2t5OyB0b3A6MDsgei1pbmRleDogNTA7CiAgICBiYWNrZ3JvdW5kOiByZ2JhKDExLDE4LDE2LDAuNzIpOwogICAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDEwcHgpOwogICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHZhcigtLWhhaXJsaW5lKTsKICB9CiAgbmF2IC53cmFwewogICAgZGlzcGxheTpmbGV4OyBhbGlnbi1pdGVtczpjZW50ZXI7IGp1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuOwogICAgaGVpZ2h0OiA3OHB4OwogIH0KICAuYnJhbmR7CiAgICBmb250LWZhbWlseTonRnJhdW5jZXMnLCBzZXJpZjsgZm9udC13ZWlnaHQ6NTAwOyBmb250LXNpemU6IDEuMTVyZW07CiAgICBsZXR0ZXItc3BhY2luZzogMC4wNmVtOwogIH0KICAuYnJhbmQgZW17IGZvbnQtc3R5bGU6bm9ybWFsOyBjb2xvcjogdmFyKC0tZ29sZCk7IH0KICAubGFuZy1zd2l0Y2h7CiAgICBkaXNwbGF5OmZsZXg7IGJvcmRlcjoxcHggc29saWQgdmFyKC0taGFpcmxpbmUpOyBib3JkZXItcmFkaXVzOiA5OTlweDsgb3ZlcmZsb3c6aGlkZGVuOwogIH0KICAubGFuZy1zd2l0Y2ggYnV0dG9uewogICAgYmFja2dyb3VuZDpub25lOyBib3JkZXI6bm9uZTsgY29sb3I6IHZhcigtLWl2b3J5LWRpbSk7CiAgICBmb250LWZhbWlseTonSW50ZXInLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTowLjc4cmVtOyBsZXR0ZXItc3BhY2luZzowLjA4ZW07CiAgICBwYWRkaW5nOiA3cHggMTZweDsgY3Vyc29yOnBvaW50ZXI7IHRyYW5zaXRpb246IGNvbG9yIC4ycywgYmFja2dyb3VuZCAuMnM7CiAgfQogIC5sYW5nLXN3aXRjaCBidXR0b24uYWN0aXZleyBiYWNrZ3JvdW5kOiB2YXIoLS1nb2xkKTsgY29sb3I6IzBiMTIxMDsgfQoKICAvKiAtLS0tLS0tLS0tIEhFUk8gLS0tLS0tLS0tLSAqLwogIC5oZXJvewogICAgcGFkZGluZzogMTMwcHggMCAxMTBweDsKICAgIHBvc2l0aW9uOiByZWxhdGl2ZTsKICAgIG92ZXJmbG93OiBoaWRkZW47CiAgfQogIC5oZXJvOjpiZWZvcmV7CiAgICBjb250ZW50OiIiOwogICAgcG9zaXRpb246YWJzb2x1dGU7IGluc2V0OjA7CiAgICBiYWNrZ3JvdW5kOgogICAgICByZXBlYXRpbmctbGluZWFyLWdyYWRpZW50KDExNWRlZywgdHJhbnNwYXJlbnQgMCA2OHB4LCByZ2JhKDE4NSwxNTQsOTEsMC4wNSkgNjhweCA2OXB4KTsKICAgIHBvaW50ZXItZXZlbnRzOm5vbmU7CiAgfQogIC5oZXJvIC53cmFweyBwb3NpdGlvbjpyZWxhdGl2ZTsgfQogIC5oZXJvLWtpY2tlcnsKICAgIGNvbG9yOiB2YXIoLS1nb2xkKTsgZm9udC1zaXplOiAwLjg1cmVtOyBsZXR0ZXItc3BhY2luZzogMC4xMmVtOwogICAgbWFyZ2luOiAwIDAgMjhweDsgbWF4LXdpZHRoOiA0MGNoOwogIH0KICBoMXsKICAgIGZvbnQtZmFtaWx5OidGcmF1bmNlcycsIHNlcmlmOyBmb250LXdlaWdodDo0MDA7IGZvbnQtb3B0aWNhbC1zaXppbmc6YXV0bzsKICAgIGZvbnQtc2l6ZTogY2xhbXAoMi42cmVtLCA2dncsIDQuNnJlbSk7CiAgICBsaW5lLWhlaWdodDogMS4wNTsKICAgIG1hcmdpbjogMCAwIDMwcHg7CiAgICBtYXgtd2lkdGg6IDE2Y2g7CiAgICBsZXR0ZXItc3BhY2luZzogLTAuMDFlbTsKICB9CiAgLmhlcm8tc3ViewogICAgZm9udC1zaXplOiAxLjE1cmVtOyBjb2xvcjogdmFyKC0taXZvcnktZGltKTsKICAgIG1heC13aWR0aDogNDZjaDsgbWFyZ2luOiAwIDAgNDZweDsKICB9CiAgLmN0YXsKICAgIGRpc3BsYXk6aW5saW5lLWJsb2NrOwogICAgYmFja2dyb3VuZDogdmFyKC0tZ29sZCk7IGNvbG9yOiMwYjEyMTA7CiAgICBmb250LWZhbWlseTonSW50ZXInLHNhbnMtc2VyaWY7IGZvbnQtd2VpZ2h0OjUwMDsgZm9udC1zaXplOjAuOTVyZW07CiAgICBwYWRkaW5nOiAxNnB4IDM0cHg7IGJvcmRlci1yYWRpdXM6IDJweDsKICAgIHRleHQtZGVjb3JhdGlvbjpub25lOyBsZXR0ZXItc3BhY2luZzowLjAyZW07CiAgICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kIC4ycywgdHJhbnNmb3JtIC4yczsKICB9CiAgLmN0YTpob3ZlcnsgYmFja2dyb3VuZDojY2JhZTc2OyB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTFweCk7IH0KICAuY3RhLmdob3N0ewogICAgYmFja2dyb3VuZDpub25lOyBib3JkZXI6MXB4IHNvbGlkIHZhcigtLWhhaXJsaW5lKTsgY29sb3I6IHZhcigtLWl2b3J5KTsKICB9CiAgLmN0YS5naG9zdDpob3ZlcnsgYm9yZGVyLWNvbG9yOiB2YXIoLS1nb2xkKTsgYmFja2dyb3VuZDogcmdiYSgxODUsMTU0LDkxLDAuMDgpOyB9CgogIC8qIC0tLS0tLS0tLS0gU0VDVElPTiBTSEVMTCAtLS0tLS0tLS0tICovCiAgc2VjdGlvbnsgcGFkZGluZzogOTZweCAwOyB9CiAgLnNlY3Rpb24taGVhZHsKICAgIGRpc3BsYXk6ZmxleDsgYWxpZ24taXRlbXM6ZmxleC1lbmQ7IGp1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuOyBnYXA6IDQwcHg7CiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgdmFyKC0taGFpcmxpbmUpOwogICAgcGFkZGluZy1ib3R0b206IDI4cHg7IG1hcmdpbi1ib3R0b206IDU2cHg7CiAgfQogIGgyewogICAgZm9udC1mYW1pbHk6J0ZyYXVuY2VzJywgc2VyaWY7IGZvbnQtd2VpZ2h0OjQwMDsKICAgIGZvbnQtc2l6ZTogY2xhbXAoMS43cmVtLCAzdncsIDIuNHJlbSk7CiAgICBtYXJnaW46MDsgbWF4LXdpZHRoOiAxNGNoOwogIH0KICAuc2VjdGlvbi1oZWFkIHB7IGNvbG9yOiB2YXIoLS1pdm9yeS1kaW0pOyBtYXgtd2lkdGg6IDM0Y2g7IG1hcmdpbjowOyBmb250LXNpemU6MC45OHJlbTsgfQoKICAvKiAtLS0tLS0tLS0tIERFU1RJTkFUSU9OUyAtLS0tLS0tLS0tICovCiAgLmNpdGllc3sKICAgIGRpc3BsYXk6Z3JpZDsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoNCwgMWZyKTsgZ2FwOiAxcHg7CiAgICBiYWNrZ3JvdW5kOiB2YXIoLS1oYWlybGluZSk7CiAgfQogIC5jaXR5ewogICAgYmFja2dyb3VuZDogdmFyKC0tYmctcGFuZWwpOwogICAgcGFkZGluZzogNDBweCAyOHB4IDM0cHg7CiAgICBkaXNwbGF5OmZsZXg7IGZsZXgtZGlyZWN0aW9uOmNvbHVtbjsgZ2FwOiAyMnB4OwogICAgbWluLWhlaWdodDogMzAwcHg7CiAgfQogIC5jaXR5IHN2Z3sgd2lkdGg6IDEwMCU7IGhlaWdodDogNjRweDsgfQogIC5jaXR5IHN2ZyBwYXRoLCAuY2l0eSBzdmcgbGluZXsgc3Ryb2tlOiB2YXIoLS1nb2xkKTsgfQogIC5jaXR5IGgzewogICAgZm9udC1mYW1pbHk6J0ZyYXVuY2VzJywgc2VyaWY7IGZvbnQtd2VpZ2h0OjUwMDsgZm9udC1zaXplOiAxLjNyZW07IG1hcmdpbjowOwogIH0KICAuY2l0eSBweyBjb2xvcjogdmFyKC0taXZvcnktZGltKTsgZm9udC1zaXplOiAwLjkycmVtOyBtYXJnaW46MDsgZmxleC1ncm93OjE7IH0KCiAgLyogLS0tLS0tLS0tLSBGT09UQkFMTCAtLS0tLS0tLS0tICovCiAgLmZvb3RiYWxseyKICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxODBkZWcsIHZhcigtLWJnLXBhbmVsLTIpLCB2YXIoLS1iZykpOwogICAgYm9yZGVyLXRvcDogMXB4IHNvbGlkIHZhcigtLWhhaXJsaW5lKTsKICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCB2YXIoLS1oYWlybGluZSk7CiAgfQogIC5mb290YmFsbC1ncmlkewogICAgZGlzcGxheTpncmlkOyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDEuMWZyIDAuOWZyOyBnYXA6IDY0cHg7IGFsaWduLWl0ZW1zOmNlbnRlcjsKICB9CiAgLmZvb3RiYWxsLWNvcHkgcHsgY29sb3I6IHZhcigtLWl2b3J5LWRpbSk7IGZvbnQtc2l6ZTogMS4wMnJlbTsgbWF4LXdpZHRoOiA0NmNoOyB9CiAgLnBpdGNoewogICAgYXNwZWN0LXJhdGlvOiA0LzM7IHBvc2l0aW9uOnJlbGF0aXZlOwogICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0taGFpcmxpbmUpOwogIH0KICAucGl0Y2g6OmJlZm9yZSwgLnBpdGNoOjphZnRlcnsKICAgIGNvbnRlbnQ6IiI7IHBvc2l0aW9uOmFic29sdXRlOyBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1oYWlybGluZSk7CiAgfQogIC5waXRjaDo6YmVmb3JleyBpbnNldDogMTQlOyBib3JkZXItcmFkaXVzOiA1MCU7IHdpZHRoOiAyNiU7IGhlaWdodDogMjYlOyB0b3A6MzclOyBsZWZ0OjM3JTsgfQogIC5waXRjaDo6YWZ0ZXJ7IHRvcDowOyBib3R0b206MDsgbGVmdDo1MCU7IHdpZHRoOjFweDsgYm9yZGVyOm5vbmU7IGJhY2tncm91bmQ6IHZhcigtLWhhaXJsaW5lKTsgfQogIC5waXRjaCAuYm94ewogICAgcG9zaXRpb246YWJzb2x1dGU7IGJvcmRlcjoxcHggc29saWQgdmFyKC0taGFpcmxpbmUpOwogICAgdG9wOiAzMCU7IGJvdHRvbTogMzAlOyB3aWR0aDogMTYlOwogIH0KICAucGl0Y2ggLmJveC5seyBsZWZ0OjA7IH0gLnBpdGNoIC5ib3gucnsgcmlnaHQ6MDsgfQogIC5sZWFndWVzewogICAgZGlzcGxheTpmbGV4OyBnYXA6IDI4cHg7IG1hcmdpbi10b3A6IDM0cHg7IGZsZXgtd3JhcDp3cmFwOwogIH0KICAubGVhZ3Vlc19zcGFuewogICAgZm9udC1zaXplOjAuODJyZW07IGNvbG9yOiB2YXIoLS1pdm9yeS1kaW0pOyBib3JkZXItbGVmdDogMnB4IHNvbGlkIHZhcigtLWdvbGQpOyBwYWRkaW5nLWxlZnQ6IDEwcHg7CiAgfQoKICAvKiAtLS0tLS0tLS0tIEhPVyBJVCBXT1JLUyAtLS0tLS0tLS0tICovCiAgLnN0ZXBzewogICAgZGlzcGxheTpncmlkOyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgzLCAxZnIpOyBnYXA6IDQ4cHg7CiAgfQogIC5zdGVweyBib3JkZXItdG9wOiAxcHggc29saWQgdmFyKC0taGFpcmxpbmUpOyBwYWRkaW5nLXRvcDogMjRweDsgfQogIC5zdGVwIC5ueyBmb250LWZhbWlseTonRnJhdW5jZXMnLCBzZXJpZjsgY29sb3I6IHZhcigtLWdvbGQpOyBmb250LXNpemU6MS41cmVtOyBkaXNwbGF5OmJsb2NrOyBtYXJnaW4tYm90dG9tOjE0cHg7IH0KICAuc3RlcCBoNHsgZm9udC1mYW1pbHk6J0ZyYXVuY2VzJywgc2VyaWY7IGZvbnQtd2VpZ2h0OjUwMDsgZm9udC1zaXplOjEuMTVyZW07IG1hcmdpbjogMCAwIDEwcHg7IH0KICAuc3RlcCBweyBjb2xvcjogdmFyKC0taXZvcnktZGltKTsgZm9udC1zaXplOjAuOTJyZW07IG1hcmdpbjowOyB9CgogIC8qIC0tLS0tLS0tLS0gQ09OVEFDVCAtLS0tLS0tLS0tICovCiAgLmNvbnRhY3R7IGJhY2tncm91bmQ6IHZhcigtLWJnLXBhbmVsKTsgYm9yZGVyLXRvcDogMXB4IHNvbGlkIHZhcigtLWhhaXJsaW5lKTsgfQogIC5jb250YWN0LWdyaWR7IGRpc3BsYXk6Z3JpZDsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjlmciAxLjFmcjsgZ2FwOiA2NHB4OyB9CiAgLmNvbnRhY3QtY29weSBweyBjb2xvcjogdmFyKC0taXZvcnktZGltKTsgbWF4LXdpZHRoOiA0MGNoOyB9CiAgZm9ybXsgZGlzcGxheTpmbGV4OyBmbGV4LWRpcmVjdGlvbjpjb2x1bW47IGdhcDogMThweDsgfQogIC5yb3cyeyBkaXNwbGF5OmdyaWQ7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmcjsgZ2FwOiAxOHB4OyB9CiAgbGFiZWx7IGZvbnQtc2l6ZTogMC43OHJlbTsgbGV0dGVyLXNwYWNpbmc6MC4wNWVtOyBjb2xvcjogdmFyKC0taXZvcnktZGltKTsgZGlzcGxheTpibG9jazsgbWFyZ2luLWJvdHRvbTo4cHg7IH0KICBpbnB1dCwgc2VsZWN0LCB0ZXh0YXJlYXsKICAgIHdpZHRoOjEwMCU7IGJhY2tncm91bmQ6IHZhcigtLWJnKTsgYm9yZGVyOiAxcHggc29saWQgdmFyKC0taGFpcmxpbmUpOwogICAgY29sb3I6IHZhcigtLWl2b3J5KTsgZm9udC1mYW1pbHk6J0ludGVyJyxzYW5zLXNlcmlmOyBmb250LXNpemU6IDAuOTVyZW07CiAgICBwYWRkaW5nOiAxM3B4IDE0cHg7IGJvcmRlci1yYWRpdXM6IDJweDsKICB9CiAgaW5wdXQ6Zm9jdXMsIHNlbGVjdDpmb2N1cywgdGV4dGFyZWE6Zm9jdXN7IG91dGxpbmU6IDJweCBzb2xpZCB2YXIoLS1nb2xkKTsgb3V0bGluZS1vZmZzZXQ6IDFweDsgfQogIHRleHRhcmVheyByZXNpemU6IHZlcnRpY2FsOyBtaW4taGVpZ2h0OiA5MHB4OyB9CiAgLmhweyBwb3NpdGlvbjphYnNvbHV0ZTsgb3BhY2l0eTowOyBoZWlnaHQ6MDsgd2lkdGg6MDsgb3ZlcmZsb3c6aGlkZGVuOyB9CiAgYnV0dG9uW3R5cGU9c3VibWl0XXsKICAgIGJhY2tncm91bmQ6IHZhcigtLWdvbGQpOyBjb2xvcjojMGIxMjEwOyBib3JkZXI6bm9uZTsgY3Vyc29yOnBvaW50ZXI7CiAgICBmb250LWZhbWlseTonSW50ZXInLHNhbnMtc2VyaWY7IGZvbnQtd2VpZ2h0OjUwMDsgZm9udC1zaXplOjAuOTVyZW07CiAgICBwYWRkaW5nOiAxNXB4IDMwcHg7IGJvcmRlci1yYWRpdXM6IDJweDsgbWFyZ2luLXRvcDogNnB4OyBhbGlnbi1zZWxmOmZsZXgtc3RhcnQ7CiAgICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kIC4yczsKICB9CiAgYnV0dG9uW3R5cGU9c3VibWl0XTpob3ZlcnsgYmFja2dyb3VuZDojY2JhZTc2OyB9CiAgLmZpbmV7IGZvbnQtc2l6ZTogMC43OHJlbTsgY29sb3I6IHZhcigtLWl2b3J5LWRpbSk7IG1hcmdpbi10b3A6IDhweDsgfQoKICBmb290ZXJ7IHBhZGRpbmc6IDQwcHggMDsgYm9yZGVyLXRvcDogMXB4IHNvbGlkIHZhcigtLWhhaXJsaW5lKTsgfQogIGZvb3RlciAud3JhcHsgZGlzcGxheTpmbGV4OyBqdXN0aWZ5LWNvbnRlbnQ6c3BhY2UtYmV0d2VlbjsgY29sb3I6IHZhcigtLWl2b3J5LWRpbSk7IGZvbnQtc2l6ZTogMC44cmVtOyB9CgogIEBtZWRpYSAobWF4LXdpZHRoOiA4NjBweCl7CiAgICAuY2l0aWVzeyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgyLCAxZnIpOyB9CiAgICAuZm9vdGJhbGwtZ3JpZCwgLmNvbnRhY3QtZ3JpZHsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnI7IGdhcDogNDBweDsgfQogICAgLnN0ZXBzeyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmcjsgfQogICAgLnJvdzJ7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyOyB9CiAgICBoMXsgZm9udC1zaXplOiAyLjRyZW07IH0KICB9CiAgQG1lZGlhIChtYXgtd2lkdGg6IDUyMHB4KXsKICAgIC5jaXRpZXN7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyOyB9CiAgICAud3JhcHsgcGFkZGluZzogMCAyMHB4OyB9CiAgfQoKICBAbWVkaWEgKHByZWZlcnMtcmVkdWNlZC1tb3Rpb246IHJlZHVjZSl7CiAgICBodG1seyBzY3JvbGwtYmVoYXZpb3I6IGF1dG87IH0KICAgICp7IHRyYW5zaXRpb246IG5vbmUgIWltcG9ydGFudDsgfQogIH0KPC9zdHlsZT4KPC9oZWFkPgo8Ym9keT4KCjxuYXY+CiAgPGRpdiBjbGFzcz0id3JhcCI+CiAgICA8ZGl2IGNsYXNzPSJicmFuZCI+TklHSFRMWSA8ZW0+VFJBVkVMPC9lbT48L2Rpdj4KICAgIDxkaXYgY2xhc3M9Imxhbmctc3dpdGNoIj4KICAgICAgPGJ1dHRvbiB0eXBlPSJidXR0b24iIGRhdGEtbGFuZz0ibm8iIGNsYXNzPSJhY3RpdmUiPk5PPC9idXR0b24+CiAgICAgIDxidXR0b24gdHlwZT0iYnV0dG9uIiBkYXRhLWxhbmc9ImVuIj5FTjwvYnV0dG9uPgogICAgPC9kaXY+CiAgPC9kaXY+CjwvbmF2Pgo8c2VjdGlvbiBjbGFzcz0iaGVybyI+CiAgPGRpdiBjbGFzcz0id3JhcCI+CiAgICA8cCBjbGFzcz0iaGVyby1raWNrZXIiPgogICAgICA8c3BhbiBjbGFzcz0ibm8iPlByaXZhdGUgcmVpc2VyIGZvciBldCBsaXRlIGFudGFsbCBnamVzdGVyPC9zcGFuPgogICAgICA8c3BhbiBjbGFzcz0iZW4iPlByaXZhdGUgdHJpcHMgZm9yIGEgc21hbGwgbnVtYmVyIG9mIGd1ZXN0czwvc3Bhbj4KICAgIDwvcD4KICAgIDxoMT4KICAgICAgPHNwYW4gY2xhc3M9Im5vIj5SZWlzZXIgc29tIGbDpSBmw6VyIG9wcGxldmUuPC9zcGFuPgogICAgICA8c3BhbiBjbGFzcz0iZW4iPlRyaXBzIHJlc2VydmVkIGZvciB0aGUgZmV3Ljwvc3Bhbj4KICAgIDwvaDE+CiAgICA8cCBjbGFzcz0iaGVyby1zdWIiPgogICAgICA8c3BhbiBjbGFzcz0ibm8iPk5pZ2h0bHkgVHJhdmVsIHNldHRlciBzYW1tZW4gZWtza2x1c2l2ZSBWSVAtcmVpc2VyIHRpbCBub2VuIGF2IHZlcmRlbnMgbWVzdCBldHRlcnRyYWt0ZWRlIGJ5ZXIsIG9nIHRpbCBkZSBzdMO4cnN0ZSBmb3RiYWxsYXJlbmFlbmUgaSBFdXJvcGEgb2cgTUxTLjwvc3Bhbj4KICAgICAgPHNwYW4gY2xhc3M9ImVuIj5OaWdodGx5IFRyYXZlbCBjdXJhdGVzIGV4Y2x1c2l2ZSBWSVAgam91cm5leXMgdG8gc29tZSBvZiB0aGUgd29ybGQncyBtb3N0IGNvdmV0ZWQgY2l0aWVzLCBhbmQgdG8gdGhlIGJpZ2dlc3QgZm9vdGJhbGwgc3RhZ2VzIGFjcm9zcyBFdXJvcGUgYW5kIE1MUy48L3NwYW4+CiAgICA8L3A+CiAgICA8YSBocmVmPSIjam9pbiIgY2xhc3M9ImN0YSI+CiAgICAgIDxzcGFuIGNsYXNzPSJubyI+UmVnaXN0cmVyIGRpbiBpbnRlcmVzc2U8L3NwYW4+CiAgICAgIDxzcGFuIGNsYXNzPSJlbiI+UmVnaXN0ZXIgeW91ciBpbnRlcmVzdDwvc3Bhbj4KICAgIDwvYT4KICA8L2Rpdj4KPC9zZWN0aW9uPgo8c2VjdGlvbiBpZD0iZGVzdGluYXRpb25zIj4KICA8ZGl2IGNsYXNzPSJ3cmFwIj4KICAgIDxkaXYgY2xhc3M9InNlY3Rpb24taGVhZCI+CiAgICAgIDxoMj48c3BhbiBjbGFzcz0ibm8iPkZpcmUgYnllci4gRXR0IG5pdsOlIGF2IHNlcnZpY2UuPC9zcGFuPjxzcGFuIGNsYXNzPSJlbiI+Rm91ciBjaXRpZXMuIE9uZSBzdGFuZGFyZCBvZiBzZXJ2aWNlLjwvc3Bhbj48L2gyPgogICAgICA8cD48c3BhbiBjbGFzcz0ibm8iPkh2ZXIgcmVpc2UgZXIgYnlnZ2V0IHJ1bmR0IHN0ZWRldCBkZW4gZmlubmVyIHN0ZWQg4oCUIGlra2UgZW4gbWFsIHNvbSBnamVudGFzLjwvc3Bhbj48c3BhbiBjbGFzcz0iZW4iPkVhY2ggdHJpcCBpcyBidWlsdCBhcm91bmQgdGhlIGNpdHkgaXRzZWxmIOKAlCBuZXZlciBhIHJlcGVhdGVkIHRlbXBsYXRlLjwvc3Bhbj48L3A+CiAgICA8L2Rpdj4KICAgIDxkaXYgY2xhc3M9ImNpdGllcyI+CiAgICAgIDxkaXYgY2xhc3M9ImNpdHkiPgogICAgICAgIDxzdmcgdmlld0JveD0iMCAwIDIwMCA2MCI+PHBhdGggZD0iTTAgNTUgTDE0IDU1IEwxNCAzMCBMMjIgMzAgTDIyIDQwIEwzMCA0MCBMMzAgMjAgTDM4IDIwIEwzOCA1NSBMNTAgNTUgTDUwIDEwIEw1OCAxMCBMNTggNTUgTDcwIDU1IEw3MCAzNSBMODAgMzUgTDgwIDU1IEw5NSA1NSBMOTUgNSBMMTAzIDUgTDEwMyA1NSBMMTE4IDU1IEwxMTggMjUgTDEyOCAyNSBMMTI4IDU1IEwxNDUgNTUgTDE0NSAxNSBMMTU1IDE1IEwxNTUgNTUgTDE3MiA1NSBMMTcyIDQ1IEwxODIgNDUgTDE4MiA1NSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz48bGluZSB4MT0iMCIgeTE9IjU1IiB4Mj0iMjAwIiB5Mj0iNTUiIHN0cm9rZS13aWR0aD0iMSIvPjwvc3ZnPgogICAgICAgIDxoMz5OZXcgWW9yazwvaDM+CiAgICAgICAgPHA+CiAgICAgICAgICA8c3BhbiBjbGFzcz0ibm8iPlNreWxpbmUsIHNranVsdGUgYmFyZXIgb2cgYm9yZCBkdSBpa2tlIGJlc3RpbGxlciBzZWx2Ljwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJlbiI+U2t5bGluZXMsIGhpZGRlbiBiYXJzLCBhbmQgdGFibGVzIHlvdSBkb24ndCBib29rIHlvdXJzZWxmLjwvc3Bhbj4KICAgICAgICA8L3A+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJjaXR5IiBmb3IgTWlhbWk+CiAgICA8L2Rpdj4KICA8L2Rpdj4KPC9zZWN0aW9uPgo=
+<!DOCTYPE html>
+<html lang="no" class="lang-no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nightly Travel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0b1210;
+    --bg-panel: #101a16;
+    --bg-panel-2: #0e1613;
+    --hairline: rgba(185,154,91,0.28);
+    --gold: #b99a5b;
+    --gold-soft: #8f7a4c;
+    --wine: #5c1c22;
+    --ivory: #ece5d3;
+    --ivory-dim: #a9b3ac;
+    --max: 1120px;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: radial-gradient(ellipse 120% 80% at 50% -10%, #142019 0%, var(--bg) 55%);
+    color: var(--ivory);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .lang-no .en{ display:none; }
+  .lang-en .no{ display:none; }
+
+  a{ color: inherit; }
+
+  .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position: sticky; top:0; z-index: 50;
+    background: rgba(11,18,16,0.72);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  nav .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    height: 78px;
+  }
+  .brand{
+    font-family:'Fraunces', serif; font-weight:500; font-size: 1.15rem;
+    letter-spacing: 0.06em;
+  }
+  .brand em{ font-style:normal; color: var(--gold); }
+  .lang-switch{
+    display:flex; border:1px solid var(--hairline); border-radius: 999px; overflow:hidden;
+  }
+  .lang-switch button{
+    background:none; border:none; color: var(--ivory-dim);
+    font-family:'Inter',sans-serif; font-size:0.78rem; letter-spacing:0.08em;
+    padding: 7px 16px; cursor:pointer; transition: color .2s, background .2s;
+  }
+  .lang-switch button.active{ background: var(--gold); color:#0b1210; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding: 130px 0 110px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      repeating-linear-gradient(115deg, transparent 0 68px, rgba(185,154,91,0.05) 68px 69px);
+    pointer-events:none;
+  }
+  .hero .wrap{ position:relative; }
+  .hero-kicker{
+    color: var(--gold); font-size: 0.85rem; letter-spacing: 0.12em;
+    margin: 0 0 28px; max-width: 40ch;
+  }
+  h1{
+    font-family:'Fraunces', serif; font-weight:400; font-optical-sizing:auto;
+    font-size: clamp(2.6rem, 6vw, 4.6rem);
+    line-height: 1.05;
+    margin: 0 0 30px;
+    max-width: 16ch;
+    letter-spacing: -0.01em;
+  }
+  .hero-sub{
+    font-size: 1.15rem; color: var(--ivory-dim);
+    max-width: 46ch; margin: 0 0 46px;
+  }
+  .cta{
+    display:inline-block;
+    background: var(--gold); color:#0b1210;
+    font-family:'Inter',sans-serif; font-weight:500; font-size:0.95rem;
+    padding: 16px 34px; border-radius: 2px;
+    text-decoration:none; letter-spacing:0.02em;
+    transition: background .2s, transform .2s;
+  }
+  .cta:hover{ background:#cbae76; transform: translateY(-1px); }
+  .cta.ghost{
+    background:none; border:1px solid var(--hairline); color: var(--ivory);
+  }
+  .cta.ghost:hover{ border-color: var(--gold); background: rgba(185,154,91,0.08); }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{ padding: 96px 0; }
+  .section-head{
+    display:flex; align-items:flex-end; justify-content:space-between; gap: 40px;
+    border-bottom: 1px solid var(--hairline);
+    padding-bottom: 28px; margin-bottom: 56px;
+  }
+  h2{
+    font-family:'Fraunces', serif; font-weight:400;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    margin:0; max-width: 14ch;
+  }
+  .section-head p{ color: var(--ivory-dim); max-width: 34ch; margin:0; font-size:0.98rem; }
+
+  /* ---------- DESTINATIONS ---------- */
+  .cities{
+    display:grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+    background: var(--hairline);
+  }
+  .city{
+    background: var(--bg-panel);
+    padding: 40px 28px 34px;
+    display:flex; flex-direction:column; gap: 22px;
+    min-height: 300px;
+  }
+  .city svg{ width: 100%; height: 64px; }
+  .city svg path, .city svg line{ stroke: var(--gold); }
+  .city h3{
+    font-family:'Fraunces', serif; font-weight:500; font-size: 1.3rem; margin:0;
+  }
+  .city p{ color: var(--ivory-dim); font-size: 0.92rem; margin:0; flex-grow:1; }
+
+  /* ---------- FOOTBALL ---------- */
+  .football{
+    background: linear-gradient(180deg, var(--bg-panel-2), var(--bg));
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .football-grid{
+    display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 64px; align-items:center;
+  }
+  .football-copy p{ color: var(--ivory-dim); font-size: 1.02rem; max-width: 46ch; }
+  .pitch{
+    aspect-ratio: 4/3; position:relative;
+    border: 1px solid var(--hairline);
+  }
+  .pitch::before, .pitch::after{
+    content:""; position:absolute; border: 1px solid var(--hairline);
+  }
+  .pitch::before{ inset: 14%; border-radius: 50%; width: 26%; height: 26%; top:37%; left:37%; }
+  .pitch::after{ top:0; bottom:0; left:50%; width:1px; border:none; background: var(--hairline); }
+  .pitch .box{
+    position:absolute; border:1px solid var(--hairline);
+    top: 30%; bottom: 30%; width: 16%;
+  }
+  .pitch .box.l{ left:0; } .pitch .box.r{ right:0; }
+  .leagues{
+    display:flex; gap: 28px; margin-top: 34px; flex-wrap:wrap;
+  }
+  .leagues span{
+    font-size:0.82rem; color: var(--ivory-dim); border-left: 2px solid var(--gold); padding-left: 10px;
+  }
+
+  /* ---------- HOW IT WORKS ---------- */
+  .steps{
+    display:grid; grid-template-columns: repeat(3, 1fr); gap: 48px;
+  }
+  .step{ border-top: 1px solid var(--hairline); padding-top: 24px; }
+  .step .n{ font-family:'Fraunces', serif; color: var(--gold); font-size:1.5rem; display:block; margin-bottom:14px; }
+  .step h4{ font-family:'Fraunces', serif; font-weight:500; font-size:1.15rem; margin: 0 0 10px; }
+  .step p{ color: var(--ivory-dim); font-size:0.92rem; margin:0; }
+
+  /* ---------- CONTACT ---------- */
+  .contact{ background: var(--bg-panel); border-top: 1px solid var(--hairline); }
+  .contact-grid{ display:grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; }
+  .contact-copy p{ color: var(--ivory-dim); max-width: 40ch; }
+  form{ display:flex; flex-direction:column; gap: 18px; }
+  .row2{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  label{ font-size: 0.78rem; letter-spacing:0.05em; color: var(--ivory-dim); display:block; margin-bottom:8px; }
+  input, select, textarea{
+    width:100%; background: var(--bg); border: 1px solid var(--hairline);
+    color: var(--ivory); font-family:'Inter',sans-serif; font-size: 0.95rem;
+    padding: 13px 14px; border-radius: 2px;
+  }
+  input:focus, select:focus, textarea:focus{ outline: 2px solid var(--gold); outline-offset: 1px; }
+  textarea{ resize: vertical; min-height: 90px; }
+  .hp{ position:absolute; opacity:0; height:0; width:0; overflow:hidden; }
+  button[type=submit]{
+    background: var(--gold); color:#0b1210; border:none; cursor:pointer;
+    font-family:'Inter',sans-serif; font-weight:500; font-size:0.95rem;
+    padding: 15px 30px; border-radius: 2px; margin-top: 6px; align-self:flex-start;
+    transition: background .2s;
+  }
+  button[type=submit]:hover{ background:#cbae76; }
+  .fine{ font-size: 0.78rem; color: var(--ivory-dim); margin-top: 8px; }
+
+  footer{ padding: 40px 0; border-top: 1px solid var(--hairline); }
+  footer .wrap{ display:flex; justify-content:space-between; color: var(--ivory-dim); font-size: 0.8rem; }
+
+  @media (max-width: 860px){
+    .cities{ grid-template-columns: repeat(2, 1fr); }
+    .football-grid, .contact-grid{ grid-template-columns: 1fr; gap: 40px; }
+    .steps{ grid-template-columns: 1fr; }
+    .row2{ grid-template-columns: 1fr; }
+    h1{ font-size: 2.4rem; }
+  }
+  @media (max-width: 520px){
+    .cities{ grid-template-columns: 1fr; }
+    .wrap{ padding: 0 20px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *{ transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">NIGHTLY <em>TRAVEL</em></div>
+    <div class="lang-switch">
+      <button type="button" data-lang="no" class="active">NO</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="hero-kicker">
+      <span class="no">Private reiser for et lite antall gjester</span>
+      <span class="en">Private trips for a small number of guests</span>
+    </p>
+    <h1>
+      <span class="no">Reiser som få får oppleve.</span>
+      <span class="en">Trips reserved for the few.</span>
+    </h1>
+    <p class="hero-sub">
+      <span class="no">Nightly Travel setter sammen eksklusive VIP-reiser til noen av verdens mest ettertraktede byer, og til de største fotballarenaene i Europa og MLS.</span>
+      <span class="en">Nightly Travel curates exclusive VIP journeys to some of the world's most coveted cities, and to the biggest football stages across Europe and MLS.</span>
+    </p>
+    <a href="#join" class="cta">
+      <span class="no">Registrer din interesse</span>
+      <span class="en">Register your interest</span>
+    </a>
+  </div>
+</section>
+
+<section id="destinations">
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="no">Fire byer. Ett nivå av service.</span><span class="en">Four cities. One standard of service.</span></h2>
+      <p><span class="no">Hver reise er bygget rundt stedet den finner sted — ikke en mal som gjentas.</span><span class="en">Each trip is built around the city itself — never a repeated template.</span></p>
+    </div>
+
+    <div class="cities">
+      <div class="city">
+        <svg viewBox="0 0 200 60"><path d="M0 55 L14 55 L14 30 L22 30 L22 40 L30 40 L30 20 L38 20 L38 55 L50 55 L50 10 L58 10 L58 55 L70 55 L70 35 L80 35 L80 55 L95 55 L95 5 L103 5 L103 55 L118 55 L118 25 L128 25 L128 55 L145 55 L145 15 L155 15 L155 55 L172 55 L172 45 L182 45 L182 55" fill="none" stroke-width="1.2"/><line x1="0" y1="55" x2="200" y2="55" stroke-width="1"/></svg>
+        <h3>New York</h3>
+        <p>
+          <span class="no">Skyline, skjulte barer og bord du ikke bestiller selv.</span>
+          <span class="en">Skylines, hidden bars, and tables you don't book yourself.</span>
+        </p>
+      </div>
+      <div class="city">
+        <svg viewBox="0 0 200 60"><path d="M0 55 Q30 20 60 50 Q90 15 120 48 Q150 22 180 50 Q195 40 200 45" fill="none" stroke-width="1.2"/><line x1="0" y1="55" x2="200" y2="55" stroke-width="1"/></svg>
+        <h3>Miami</h3>
+        <p>
+          <span class="no">Varme netter, åpne farger og en puls som aldri stopper.</span>
+          <span class="en">Warm nights, open colour, a pulse that never stops.</span>
+        </p>
+      </div>
+      <div class="city">
+        <svg viewBox="0 0 200 60"><path d="M0 55 L20 55 L20 25 L28 25 L28 55 L45 55 L45 12 L53 12 L53 55 L70 55 L70 30 L78 22 L86 30 L86 55 L105 55 L105 18 L113 18 L113 55 L135 55 L135 35 L143 35 L143 55 L160 55 L160 8 L168 8 L168 55 L185 55 L185 40" fill="none" stroke-width="1.2"/><line x1="0" y1="55" x2="200" y2="55" stroke-width="1"/></svg>
+        <h3>Barcelona</h3>
+        <p>
+          <span class="no">Middelhavslys om dagen, eksklusive rom om natten.</span>
+          <span class="en">Mediterranean light by day, exclusive rooms by night.</span>
+        </p>
+      </div>
+      <div class="city">
+        <svg viewBox="0 0 200 60"><path d="M0 55 L18 55 L18 20 L26 20 L26 55 L40 55 L40 32 L48 24 L56 32 L56 55 L75 55 L75 15 L83 15 L83 55 L100 55 L100 40 L108 40 L108 20 L116 20 L116 55 L140 55 L140 28 L148 28 L148 55 L170 55 L170 45 L182 45 L182 55" fill="none" stroke-width="1.2"/><line x1="0" y1="55" x2="200" y2="55" stroke-width="1"/></svg>
+        <h3>Milano</h3>
+        <p>
+          <span class="no">Der mote og nattelivet møtes ved samme bord.</span>
+          <span class="en">Where fashion and nightlife share the same table.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="football">
+  <div class="wrap">
+    <div class="football-grid">
+      <div class="football-copy">
+        <h2 style="margin-bottom:22px;">
+          <span class="no">Fotball på høyeste nivå</span>
+          <span class="en">Football at the highest level</span>
+        </h2>
+        <p>
+          <span class="no">Vi tar deg til kamper hos Europas største klubber og til MLS — med de beste plassene, uten kø og uten stress. Du møter opp. Vi har løst resten.</span>
+          <span class="en">We take you to matches at Europe's biggest clubs and in MLS — with the best seats, no queues, no stress. You show up. We've handled the rest.</span>
+        </p>
+        <div class="leagues">
+          <span><span class="no">Europas toppligaer</span><span class="en">Europe's top leagues</span></span>
+          <span>MLS</span>
+          <span><span class="no">Utsolgte kamper</span><span class="en">Sold-out fixtures</span></span>
+          <span><span class="no">VIP-losje &amp; hospitality</span><span class="en">VIP boxes &amp; hospitality</span></span>
+        </div>
+      </div>
+      <div class="pitch"><div class="box l"></div><div class="box r"></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="no">Hvordan det fungerer</span><span class="en">How it works</span></h2>
+      <p><span class="no">Enkelt for deg — vi tar oss av resten.</span><span class="en">Simple for you — we take care of the rest.</span></p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="n">01</span>
+        <h4><span class="no">Meld din interesse</span><span class="en">Register your interest</span></h4>
+        <p><span class="no">Fortell oss hvilken reise som fanger deg — by eller kamp.</span><span class="en">Tell us which trip appeals — a city or a match.</span></p>
+      </div>
+      <div class="step">
+        <span class="n">02</span>
+        <h4><span class="no">Vi tar kontakt</span><span class="en">We'll be in touch</span></h4>
+        <p><span class="no">En kort samtale for å avstemme dato, ønsker og nivå.</span><span class="en">A short call to align on dates, preferences and level.</span></p>
+      </div>
+      <div class="step">
+        <span class="n">03</span>
+        <h4><span class="no">Du reiser</span><span class="en">You travel</span></h4>
+        <p><span class="no">Alt er ordnet på forhånd. Du trenger bare å møte opp.</span><span class="en">Everything is arranged in advance. You just show up.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="join">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <h2 style="margin-bottom:18px;"><span class="no">Bli med</span><span class="en">Join us</span></h2>
+        <p><span class="no">Fortell oss hvilken reise som interesserer deg, og vi tar kontakt.</span><span class="en">Tell us which trip interests you, and we'll reach out.</span></p>
+      </div>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="Nightly Travel — ny interesse">
+
+        <div class="row2">
+          <div>
+            <label for="name"><span class="no">Navn</span><span class="en">Name</span></label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email"><span class="no">E-post</span><span class="en">Email</span></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="row2">
+          <div>
+            <label for="phone"><span class="no">Telefon (valgfritt)</span><span class="en">Phone (optional)</span></label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div>
+            <label for="interest"><span class="no">Hva interesserer deg?</span><span class="en">What interests you?</span></label>
+            <select id="interest" name="interest">
+              <option>New York</option>
+              <option>Miami</option>
+              <option>Barcelona</option>
+              <option>Milano</option>
+              <option value="Football — Europe">Football — Europe</option>
+              <option value="Football — MLS">Football — MLS</option>
+              <option value="Not sure yet">
+                <span class="no">Vet ikke ennå</span>
+                <span class="en">Not sure yet</span>
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="message"><span class="no">Melding (valgfritt)</span><span class="en">Message (optional)</span></label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+
+        <button type="submit">
+          <span class="no">Send</span>
+          <span class="en">Send</span>
+        </button>
+        <p class="fine">
+          <span class="no">Ved å sende inn dette skjemaet godtar du at vi kontakter deg angående reisen.</span>
+          <span class="en">By submitting this form, you agree that we may contact you about the trip.</span>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Nightly Travel</span>
+    <span><span class="no">Kun etter forespørsel</span><span class="en">By request only</span></span>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.body.className = 'lang-' + btn.dataset.lang;
+      document.documentElement.lang = btn.dataset.lang;
+    });
+  });
+</script>
+
+</body>
+</html>
